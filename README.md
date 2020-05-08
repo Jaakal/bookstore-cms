@@ -1,4 +1,10 @@
+# Bookstore CMS
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Live Version
+
+![Bookstore CMS](https://edem-jaak-bookstore.herokuapp.com/)
 
 ## Available Scripts
 
