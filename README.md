@@ -116,9 +116,9 @@ npx eslint . --fix
 
 👤 **Edem Agbenyo**
 
-<a href="https://github.com/Jaakal" target="_blank">
+<a href="https://github.com/edemagbenyo" target="_blank">
 
-  ![Screenshot Image](src/images/edem-profile.png) 
+  ![Screenshot Image](src/images/edem.png) 
 
 </a>
 
