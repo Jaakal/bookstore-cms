@@ -18,22 +18,21 @@ const store = createStore(
 );
 
 store.dispatch(addBook({
-    id: Math.floor(Math.random() * 1001).toString(),
-    title: 'The richest man in babylon',
-    category: 'Learning',
-  })
-);
-
-store.dispatch(addBook({
-    id: Math.floor(Math.random() * 1001).toString(),
-    title: 'Laws of Business',
-    category: 'Learning',
+  id: Math.floor(Math.random() * 1001).toString(),
+  title: 'The richest man in babylon',
+  category: 'Learning',
 }));
 
 store.dispatch(addBook({
-    id: Math.floor(Math.random() * 1001).toString(),
-    title: 'Good to Great',
-    category: 'Learning',
+  id: Math.floor(Math.random() * 1001).toString(),
+  title: 'Laws of Business',
+  category: 'Learning',
+}));
+
+store.dispatch(addBook({
+  id: Math.floor(Math.random() * 1001).toString(),
+  title: 'Good to Great',
+  category: 'Learning',
 }));
 
 ReactDOM.render(

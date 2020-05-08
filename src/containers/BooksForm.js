@@ -49,7 +49,7 @@ class BooksForm extends React.Component {
           <input placeholder="Book title" onChange={this.handleChange} id="title" name="title" />
 
           <div className="select-wrapper">
-            <div className="arrow-down"></div>
+            <div className="arrow-down" />
             <select onChange={this.handleChange} id="category">
               <option value="default">Category</option>
               {CATEGORIES.map(category => <option key={category}>{category}</option>)}
