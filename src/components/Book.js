@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const Book = (props) => {
-  const { id, title, category } = props.book;
+const Book = props => {
+  const { book } = props;
+  const { id, title, category } = book;
   return (
     <tr>
       <td>{id}</td>
@@ -9,6 +11,17 @@ const Book = (props) => {
       <td>{category}</td>
     </tr>
   );
+};
+
+Book.defaultProps = {
+  book: {
+    id: '',
+    title: '',
+    category: '',
+  },
+};
+Book.propTypes = {
+  book: PropTypes.objectOf(PropTypes.object),
 };
 
 export default Book;
