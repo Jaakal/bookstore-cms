@@ -1,5 +1,5 @@
-const CREATE_BOOK = "CREATE_BOOK";
-const REMOVE_BOOK = "REMOVE_BOOK";
+const CREATE_BOOK = 'CREATE_BOOK';
+const REMOVE_BOOK = 'REMOVE_BOOK';
 
 export default function (state = [], action) {
   switch (action.type) {
