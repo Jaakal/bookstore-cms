@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Version
 
-![Bookstore CMS](https://edem-jaak-bookstore.herokuapp.com/)
+[Bookstore CMS](https://edem-jaak-bookstore.herokuapp.com/)
 
 ## Available Scripts
 
