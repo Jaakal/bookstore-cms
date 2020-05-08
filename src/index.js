@@ -13,7 +13,7 @@ const store = createStore(
 store.dispatch({
   type: 'CREATE_BOOK',
   book: {
-    id: 1,
+    id: '1',
     title: 'The richest man in babylon',
     category: 'Learning',
   },
@@ -21,7 +21,7 @@ store.dispatch({
 store.dispatch({
   type: 'CREATE_BOOK',
   book: {
-    id: 2,
+    id: '2',
     title: 'Laws of Business',
     category: 'Learning',
   },
@@ -29,7 +29,7 @@ store.dispatch({
 store.dispatch({
   type: 'CREATE_BOOK',
   book: {
-    id: 3,
+    id: '3',
     title: 'Good to Great',
     category: 'Learning',
   },
