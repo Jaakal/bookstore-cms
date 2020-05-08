@@ -1,7 +1,7 @@
 import React from "react";
 
 const Book = (props) => {
-  const { id, title, category } = props;
+  const { id, title, category } = props.book;
   return (
     <tr>
       <td>{id}</td>

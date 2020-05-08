@@ -8,8 +8,9 @@ class BooksForm extends Component {
     return (
       <div>
         <form>
-          <input name="title" value=""/>
+          <input name="title"/>
           <select>
+            <option defaultValue="">Select a category</option>
     {CATEGORIES.map((category,index)=><option key={index}>{category}</option>)}
           </select>
           <button type="submit"></button>

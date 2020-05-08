@@ -17,7 +17,7 @@ class BooksList extends Component {
             </tr>
           </thead>
           <tbody>
-          {books.map(book=><Book book={book}></Book>)}
+          {books.map(book=><Book key={book.id} book={book}></Book>)}
           </tbody>
         </table>
       </div>
@@ -25,6 +25,7 @@ class BooksList extends Component {
   }
 }
 const mapStateToProps = (state)=>{
+  console.log(state)
   return {
     books: state.books
   }
