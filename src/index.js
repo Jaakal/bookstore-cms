@@ -1,39 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import { Provider } from 'react-redux';
+
 import { createStore } from 'redux';
-import App from './App';
+import { Provider } from 'react-redux';
+
 import * as serviceWorker from './serviceWorker';
+
+import App from './App';
 import combinedReducers from './reducers/index';
+import { addBook } from './actions/index';
+
+import './css/reset.css';
+import './css/index.css';
 
 const store = createStore(
   combinedReducers,
 );
-store.dispatch({
-  type: 'CREATE_BOOK',
-  book: {
-    id: '1',
+
+store.dispatch(addBook({
+    id: Math.floor(Math.random() * 1001).toString(),
     title: 'The richest man in babylon',
     category: 'Learning',
-  },
-});
-store.dispatch({
-  type: 'CREATE_BOOK',
-  book: {
-    id: '2',
+  })
+);
+
+store.dispatch(addBook({
+    id: Math.floor(Math.random() * 1001).toString(),
     title: 'Laws of Business',
     category: 'Learning',
-  },
-});
-store.dispatch({
-  type: 'CREATE_BOOK',
-  book: {
-    id: '3',
+}));
+
+store.dispatch(addBook({
+    id: Math.floor(Math.random() * 1001).toString(),
     title: 'Good to Great',
     category: 'Learning',
-  },
-});
+}));
 
 ReactDOM.render(
   <React.StrictMode>

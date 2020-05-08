@@ -1,21 +1,24 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import '../css/book.css';
+
 const Book = props => {
   const { book, handleRemoveBook } = props;
-  const { id, title, category } = book;
+  const { title, category } = book;
 
   const handleRemoveBookClosure = () => {
     handleRemoveBook(book);
   };
 
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td><button onClick={handleRemoveBookClosure} type="button">Remove Book</button></td>
-    </tr>
+    <div className="book-card">
+      <div className="book-card-info">
+        <div className="category">{category}</div>
+        <div className="title">{title}</div>
+      </div>
+      <button onClick={handleRemoveBookClosure} type="button">Remove Book</button>
+    </div>
   );
 };
 
