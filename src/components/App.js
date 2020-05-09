@@ -1,9 +1,9 @@
 import React from 'react';
 
-import BooksList from './containers/BooksList';
-import BooksForm from './containers/BooksForm';
+import BooksList from '../containers/BooksList';
+import BooksForm from '../containers/BooksForm';
 
-import './css/app.css';
+import '../css/app.css';
 
 function App() {
   return (
