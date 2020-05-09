@@ -1,10 +1,42 @@
 # Bookstore CMS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+App, where you can keep the list of the books.
 
-## Live Version
+<div class="button-group">
+  <a href="https://edem-jaak-bookstore.herokuapp.com/" class="button">Live Version</a> |
+  <a href="#screenshot" class="button">Screenshot</a> |
+  <a href="#getting-started" class="button">Getting Started</a> |
+  <a href="#available-scripts" class="button">Available Scripts</a> |
+  <a href="#built-with" class="button">Built With</a> |
+  <a href="#authors" class="button">Authors</a> |
+  <a href="#license" class="button">License</a>
+</div>
 
-[Bookstore CMS](https://edem-jaak-bookstore.herokuapp.com/)
+## Screenshot
+
+![Screenshot of the webpage](https://github.com/Jaakal/bookstore-cms/blob/milestone5/src/images/screenshot.png)
+
+## Getting Started
+
+Clone the repository into your local computer.
+
+### Installing
+
+First you'll have to install the newest version of [Node](https://nodejs.org/en/download/). Then move into the project main directory on the console and follow the instructions below. 
+
+Install all the necessary packages:
+
+```
+$ npm install
+```
+
+To be sure, that npm is able to run scripts, lets set the `ignore-scripts` configuration key to false:
+
+```
+$ npm config set ignore-scripts false
+```
+
+> You can find the scripts in the `package.json` file in the `scripts` section.
 
 ## Available Scripts
 
@@ -43,32 +75,58 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### ESLint
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Run the command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+npx eslint .
+```
 
-### Code Splitting
+ESLint has the auto fix option as well, for that you'll have to run the command:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+npx eslint . --fix
+```
 
-### Analyzing the Bundle Size
+## Built With
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+* [React](https://reactjs.org/) - A JavaScript library for building user interfaces
+* [Redux](https://redux.js.org/) - A Predictable State Container for JS Apps
+* [JavaScript](https://www.javascript.com/) - Programming language used
+* [HTML](https://en.wikipedia.org/wiki/HTML) - Hypertext Markup Language
+* [SCSS](https://sass-lang.com/) - Sassy CSS
+* [CSS](https://www.w3.org/Style/CSS/Overview.en.html) - Cascading Style Sheets
+* [VS Code](https://code.visualstudio.com/) - The code editor used
 
-### Making a Progressive Web App
+## Authors
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+👤 **Jaak Kivinukk**
 
-### Advanced Configuration
+<a href="https://github.com/Jaakal" target="_blank">
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+  ![Screenshot Image](src/images/jaak-profile.png) 
 
-### Deployment
+</a>
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+- Github: [@Jaakal](https://github.com/Jaakal)
+- Twitter: [@JKivinukk](https://twitter.com/JKivinukk)
+- Linkedin: [Jaak Kivinukk](https://www.linkedin.com/in/jaak-kivinukk)
+- Email: [jaak.kivinukk@gmail.com](jaak.kivinukk@gmail.com)
 
-### `npm run build` fails to minify
+👤 **Edem Agbenyo**
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<a href="https://github.com/edemagbenyo" target="_blank">
+
+  ![Screenshot Image](src/images/edem.png) 
+
+</a>
+
+- Github: [@edemagbenyo](https://github.com/edemagbenyo)
+- Twitter: [@edemAgbenyo](https://twitter.com/edemAgbenyo)
+- Linkedin: [Edem Agbenyo](https://www.linkedin.com/in/edemagbenyo/)
+- Email: [edem.agbenyo@gmail.com](edem.agbenyo@gmail.com)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
