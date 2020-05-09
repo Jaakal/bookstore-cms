@@ -12,9 +12,6 @@ App, where you can keep the list of the books.
   <a href="#license" class="button">License</a>
 </div>
 
-<<<<<<< HEAD
-[Bookstore CMS](https://edem-jaak-bookstore.herokuapp.com/)
-=======
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/bookstore-cms/blob/milestone5/src/images/screenshot.png)
@@ -40,7 +37,6 @@ $ npm config set ignore-scripts false
 ```
 
 > You can find the scripts in the `package.json` file in the `scripts` section.
->>>>>>> milestone2
 
 ## Available Scripts
 
