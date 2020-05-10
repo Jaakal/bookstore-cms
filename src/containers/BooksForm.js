@@ -11,7 +11,7 @@ class BooksForm extends React.Component {
 
     this.state = {
       title: '',
-      category: 'default',
+      category: '',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -30,25 +30,28 @@ class BooksForm extends React.Component {
     const { addBook } = this.props;
 
     addBook(this.state);
+    document.getElementById('category').value = 'Select a category';
 
     this.setState({
       title: '',
-      category: 'default',
+      category: '',
     });
   }
 
   render() {
+    const { title } = this.state;
+
     return (
       <form onSubmit={this.handleSubmit}>
         <label htmlFor="title">
           Book Title
-          <input onChange={this.handleChange} id="title" name="title" />
+          <input onChange={this.handleChange} id="title" name="title" value={title} autoComplete="off" />
         </label>
 
         <label htmlFor="category">
           Book Category
           <select onChange={this.handleChange} id="category">
-            <option defaultValue="default">Select a category</option>
+            <option>Select a category</option>
             {CATEGORIES.map(category => <option key={category}>{category}</option>)}
           </select>
         </label>
