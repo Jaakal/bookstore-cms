@@ -14,14 +14,12 @@ const CATEGORIES = [
 const CategoryFilter = props => {
   const { handleFilterChange } = props;
   return (
-    <div>
-      <select onChange={e => handleFilterChange(e)}>
-        <option defaultValue="All"> All</option>
-        {CATEGORIES.map(category => (
-          <option key={category} value={category}>{category}</option>
-        ))}
-      </select>
-    </div>
+    <select className="filter-selection" onChange={e => handleFilterChange(e)}>
+      <option defaultValue="All"> All</option>
+      {CATEGORIES.map(category => (
+        <option key={category} value={category}>{category}</option>
+      ))}
+    </select>
   );
 };
 

@@ -1,7 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+
+import PropTypes from 'prop-types';
+
 import { addBook } from '../actions/index';
+
+import '../css/books-form.css';
 
 
 const CATEGORIES = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
@@ -11,7 +15,7 @@ class BooksForm extends React.Component {
 
     this.state = {
       title: '',
-      category: 'Select a category',
+      category: 'Category',
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -30,7 +34,7 @@ class BooksForm extends React.Component {
     const { addBook } = this.props;
     const { category } = this.state;
 
-    if (category === 'Select a category') {
+    if (category === 'Category') {
       addBook({ ...this.state, category: '' });
     } else {
       addBook(this.state);
@@ -38,7 +42,7 @@ class BooksForm extends React.Component {
 
     this.setState({
       title: '',
-      category: 'Select a category',
+      category: 'Category',
     });
   }
 
@@ -46,22 +50,22 @@ class BooksForm extends React.Component {
     const { title, category } = this.state;
 
     return (
-      <form onSubmit={this.handleSubmit}>
-        <label htmlFor="title">
-          Book Title
-          <input onChange={this.handleChange} id="title" name="title" value={title} autoComplete="off" />
-        </label>
+      <div className="form-wrapper">
+        <h2 className="title">Add new book</h2>
+        <form onSubmit={this.handleSubmit}>
+          <input placeholder="Book title" onChange={this.handleChange} id="title" name="title" value={title} autoComplete="off" />
 
-        <label htmlFor="category">
-          Book Category
-          <select onChange={this.handleChange} id="category" value={category}>
-            <option>Select a category</option>
-            {CATEGORIES.map(category => <option key={category}>{category}</option>)}
-          </select>
-        </label>
+          <div className="select-wrapper">
+            <div className="arrow-down" />
+            <select onChange={this.handleChange} id="category" value={category}>
+              <option value="default">Category</option>
+              {CATEGORIES.map(category => <option key={category}>{category}</option>)}
+            </select>
+          </div>
 
-        <button type="submit">Create Book</button>
-      </form>
+          <button type="submit">Add Book</button>
+        </form>
+      </div>
     );
   }
 }

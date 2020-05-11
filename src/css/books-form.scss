@@ -1,0 +1,114 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px 40px 80px;
+  background-color: #fafafa;
+
+  .title {
+    padding: 40px 0 30px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: -0.18px;
+    border-top: solid 1px #e8e8e8;
+    color: #888888;
+  }
+}
+
+form {
+  display: flex;
+  padding: 40px 0;
+  border-top: solid 1px #e8e8e8;
+
+  .select-wrapper {
+    position: relative;
+    max-width: 285px;
+    width: 100%;
+    margin-right: 30px;
+  }
+
+  .arrow-down {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 0; 
+    height: 0; 
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 10px solid #c7c7c7;
+    
+    transform: translateY(-50%);
+  }
+  
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 45px;
+    width: 100%;
+    padding: 0 20px;
+    border-radius: 4px;
+    border: solid 1px #e8e8e8;
+    background-color: #ffffff;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.15px;
+    color: #c4c4c4;
+    outline: none;
+  }
+
+  button {
+    width: 184px;
+    height: 45px;
+    border-radius: 3px;
+    font-family: 'RobotoSlab', serif;
+    font-size: 13px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #0290ff;
+    color: #ffffff;
+  }
+}
+
+#title {
+  flex-grow: 1;
+  height: 45px;
+  padding: 0 20px;
+  margin-right: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.15px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  outline: none;
+
+  &::placeholder {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -0.15px;
+    color: #c4c4c4;
+  }
+}
