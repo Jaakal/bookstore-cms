@@ -12,6 +12,7 @@ App, where you can keep the list of the books.
   <a href="#license" class="button">License</a>
 </div>
 
+
 ## Screenshot
 
 ![Screenshot of the webpage](https://github.com/Jaakal/bookstore-cms/blob/milestone5/src/images/screenshot.png)
